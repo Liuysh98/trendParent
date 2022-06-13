@@ -5,3 +5,9 @@ eureka:
 spring:
   application:
     name: index-gather-store-service
+  redis:
+    database: 1
+  cache:
+    redis:
+
+

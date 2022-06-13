@@ -21,6 +21,15 @@ public class IndexController {
 
     @GetMapping("/getCodes")
     public List<Index> get() throws Exception{
-        return indexService.fetchIndexesFromThird();
+        return indexService.get();
+    }
+    @GetMapping("/freshCodes")
+    public List<Index> fresh() throws Exception{
+        return indexService.fresh();
+    }
+    @GetMapping("/removeCodes")
+    public String remove() throws Exception{
+        indexService.remove();
+        return "remove codes successfully";
     }
 }
