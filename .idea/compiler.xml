@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="index-zuul-service" />
+        <module name="trend-trading-backtest-view" />
         <module name="index-codes-service" />
         <module name="third-part-index-data-project" />
         <module name="index-data-service" />
@@ -28,6 +29,7 @@
       <module name="index-zuul-service" options="-parameters" />
       <module name="third-part-index-data-project" options="-parameters" />
       <module name="trend-trading-backtest-service" options="-parameters" />
+      <module name="trend-trading-backtest-view" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: trend-trading-backtest-view
+  thymeleaf:
+    mode: LEGACYHTML5
+    servlet:
+      content-type: text/html
+    cache: false
+
+eureka:
+  client:
+    eureka-server-u-r-l-context: http://localhost:8761/eureka/
