@@ -13,7 +13,6 @@ import java.util.List;
  */
 @Component
 public class IndexDataClientFeignHystrix implements IndexDataClient{
-
     @Override
     public List<IndexData> getIndexData(String code) {
         IndexData indexData= new IndexData();
