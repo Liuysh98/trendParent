@@ -6,15 +6,15 @@ package com.liuysh.pojo;
  * @Description:
  */
 public class Profit {
-    String data;
+    String date;
     float value;
 
-    public String getData() {
-        return data;
+    public String getDate() {
+        return date;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public float getValue() {
