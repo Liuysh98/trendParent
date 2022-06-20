@@ -1,5 +1,6 @@
 package com.liuysh;
 
+import brave.sampler.Sampler;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.NumberUtil;
@@ -8,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.Bean;
 
 import java.util.Scanner;
 import java.util.concurrent.ExecutionException;
@@ -83,5 +85,9 @@ public class IndexDataApplication {
         }
         // 反射的方式启动自己
         new SpringApplicationBuilder(IndexDataApplication.class).properties("server.port=" + port).run(args);
+    }
+    @Bean
+    public Sampler defaultSampler() {
+        return Sampler.ALWAYS_SAMPLE;
     }
 }

@@ -10,3 +10,5 @@ spring:
 eureka:
   client:
     eureka-server-u-r-l-context: http://localhost:8761/eureka/
+zipin:
+  base-url: http://localhost:9411
